@@ -18,8 +18,8 @@ Given ('I open ProtoCommerce website', function(){
 Then ('I filled the form', function(){
     
     cy.get("div[class='form-group'] input[name='name']").type("Khadijat");
-    cy.get("input[name='email']").type("muhammadkhadijato@gmail.com");
-    cy.get("#exampleInputPassword1").type("khadijat02.");
+    cy.get("input[name='email']").type("practotesting@gmail.com");
+    cy.get("#exampleInputPassword1").type("practise02.");
     cy.get("#exampleCheck1").check();
     cy.get("#exampleFormControlSelect1").select("Female");
     cy.get("#inlineRadio1").check().should('be.checked');
