@@ -24,4 +24,7 @@ jobs:
       - name: Run Cypress tests
         run: npx cypress run
 
-      - run: npx cypress run --record --key ea7017f6-76b7-4574-bcab-3ac8aed99da2
+      - name: Run Cypress tests
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        run: npx cypress run --config-file=cypress.config.js --record true --key ${{ secrets.CYPRESS_RECORD_KEY }}
