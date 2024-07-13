@@ -21,6 +21,7 @@ return config;
 }
 
 module.exports = defineConfig({
+  projectId: 'otk4c8',
 e2e: {
 setupNodeEvents,
 specPattern: 'cypress/integration/BDD/*.feature',
