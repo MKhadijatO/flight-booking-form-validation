@@ -23,3 +23,5 @@ jobs:
 
       - name: Run Cypress tests
         run: npx cypress run
+
+      - run: npx cypress run --record --key ea7017f6-76b7-4574-bcab-3ac8aed99da2
