@@ -61,7 +61,3 @@ Then ('I click on Submit', function(){
     cy.get("#ctl00_mainContent_btn_FindFlights").click();
     cy.get("#aspnetForm").submit();      
 })
-
-Then ('I validate successful booking', function (){
-
-})  
